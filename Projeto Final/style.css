@@ -1,0 +1,194 @@
+:root{
+    --cor-azul-metal: #223643;
+    --cor-dourada: #C29D62;
+    --cor-bege: #F9F8F4;
+    --cor-branco: #ffffff;
+
+}
+
+body{
+    background-color: var(--cor-bege);
+}
+
+header{
+    background-color: var(--cor-dourada);
+    width: 100%;
+    padding: 1px 1px;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== Variáveis ====== */
+
+.marginSite{
+    margin: 1% 5%;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.displayFlex{
+    display: flex;
+    align-items: center;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.gap30{
+        gap: 30px;
+}
+
+@media (max-width: 420px){
+    .gap30{
+        gap: 15px;
+    }
+}
+
+/* ====== Cabeçalho ====== */
+
+.logo{
+    height: 60px;
+}
+@media (max-width: 420px){
+    .logo{height: 50px;}
+}
+
+.imgCabecalho{
+    height: 40px;
+    padding-top: 3px;
+}
+
+@media (max-width: 420px){
+    .imgCabecalho{
+        height: 30px;
+    }
+}
+
+.icone {
+    transition: transform 0.3s ease;
+
+}
+
+.icone:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+    .flexWrap{
+        flex-wrap: wrap;
+    }
+}
+
+/* ====== Equipamentos ====== */
+
+h1,h2{
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--cor-azul-metal);
+}
+
+.fonte{
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+}
+
+.textoCentro {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.displayEquipamentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.nome{
+    margin-bottom: 20px;
+    color: var(--cor-azul-metal);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.imagens{
+    width: 360px; height: 360px;
+    border-radius: 101px;
+}
+
+@media screen and (max-width:1024px) {
+    .imagens{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+.botaoAgende{
+    border: none;
+    background-color: var(--cor-dourada);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--cor-branco);
+    max-width: 30%;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    display: flex
+}
+
+.botaoAgende:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.conteinerAgende{
+    align-items: center;
+    gap: 15px;
+    padding: 70px 0 100px;
+    justify-content: center;
+    display: flex;
+}
+
+/* ====== Cidades ====== */
+
+.lista{
+    list-style-type: circle;
+    color: var(--cor-azul-metal);
+    line-height: 1.8;
+    padding-left: 40PX;
+    padding-bottom: 100px;
+}
+
+/* ====== Footer ====== */
+
+footer{
+    background-color: rgba(34, 54, 67, 0.1);
+    opacity: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 5%;
+    text-align: center;
+}
