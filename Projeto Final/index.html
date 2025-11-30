@@ -22,13 +22,27 @@
             </div>
             <div class="displayFlex imgCabecalho gap30">
                 <a href="https://www.instagram.com/"><img class="imgCabecalho icone" height="40px" src="img/instagram.webp" alt="logo instagram"></a>
-                <a href="https://www.whatsapp.com/"><img class="imgCabecalho icone" height="40px" src="img/whatsapp.webp" alt="logo whatsapp"></a>
+                <button id="botaoAgendar" class="botaoHeader">Agendar</button>
             </div>
         </nav>
 
     <!--fim cabeçalho-->
 
     </header>
+
+
+    <!-- carrossel -->
+
+        <div class="carrosselContainer">
+        <div class="carrosselSlide">
+            <img src="img/banner_um.webp">
+            <img src="img/banner_dois.webp">
+            <img src="img/banner_tres.webp">
+        </div>
+        <button id="antBtn" class="carrosselBtn anterior"><</button>
+        <button id="proBtn" class="carrosselBtn proximo">></button>
+    </div>
+
 
     <!--Sessão equipamentos-->
 
@@ -75,35 +89,67 @@
             </div>
         </section>
 
-    <!--botão Agende seu aluguel-->
+    <!--pop up Agende seu aluguel-->
 
-        <section class="conteinerAgende">
-            <a class="botaoAgende displayFlex justifyCenter" href="#">AGENDE SEU ALUGUEL PELO WHATSAPP (42)1234-5678</a>
-        </section>
+    <!--coloco numeros no value ou deixo nomes???-->
 
-        <!--Cidades (não sei ainda se coloco uma lista das cidades ou um jeito de pesquisar elas)-->
+        <div id="popup" class="popup">
+            <div class="popupContent">
+            <h3 class="fontePopup">Agendar locação</h3>
+            <label class="fontePopup">Cidade:</label>
+            <select id="cidade">
+                <option value="Atalaia">Atalaia</option>
+                <option value="Boa Ventura de São Roque">Boa Ventura de São Roque</option>
+                <option value="Campina do Simão">Campina do Simão</option>
+                <option value="Candói">Candói</option>
+                <option value="Colônia Vitória">Colônia Vitória</option>
+                <option value="Entre Rios">Entre Rios</option>
+                <option value="Faxinal da Boa Vista">Faxinal da Boa Vista</option>
+                <option value="Foz do Jordão">Foz do Jordão</option>
+                <option value="Goioxim">Goioxim</option>
+                <option value="Guará">Guará</option>
+                <option value="Guarapuava">Guarapuava</option>
+                <option value="Imbituva">Imbituva</option>
+                <option value="Inácio Martins">Inácio Martins</option>
+                <option value="Irati">Irati</option>
+                <option value="Laranjeiras do Sul">Laranjeiras do Sul</option>
+                <option value="Manoel Ribas">Manoel Ribas</option>
+                <option value="Mato Rico">Mato Rico</option>
+                <option value="Palmeira">Palmeira</option>
+                <option value="Palmeirinha">Palmeirinha</option>
+                <option value="Pinhão">Pinhão</option>
+                <option value="Pitanga">Pitanga</option>
+                <option value="Prudentópolis">Prudentópolis</option>
+                <option value="Reserva">Reserva</option>
+                <option value="Rio Bonito do Iguaçu">Rio Bonito do Iguaçu</option>
+                <option value="Santa Maria do Oeste">Santa Maria do Oeste</option>
+                <option value="Turvo">Turvo</option>
+            </select>
 
-        <section>
-            <h2 class="textoCentro justifyCenter marginSite">Cidades atendidas</h2>
-            <ul class= "justifyCenter lista">
-                <li>Cidade 1</li>
-                <li>Cidade 2</li>
-                <li>Cidade 3</li>
-                <li>Cidade 4</li>
-                <li>Cidade 5</li>
-                <li>Cidade 6</li>
-                <li>Cidade 7</li>
-                
-            </ul>
-        </section>
-    </main>
+            <label class="fontePopup">Equipamento:</label>
+            <select id="maquina">
+                <option value="Criofrequência">Criofrequência</option>
+                <option value="Criolipólise">Criolipólise</option>
+                <option value="Laser Crystal 3D">Laser Crystal 3D</option>
+                <option value="LED">LED</option>
+                <option value="Luz Pulsada">Luz Pulsada</option>
+                <option value="Multishape">Multishape</option>
 
-    <!--final-->
+            </select>
+
+            <label class="fontePopup">Data desejada:</label>
+            <input type="date" id="data" min="2025-01-01" max="2025-12-31">
+
+            <button id="enviarZap">Enviar mensagem</button>
+            </div>
+        </div>
+
 
     <footer>
         <section>
             <p> Copyright © 2025 Galinha Locações</p>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
