@@ -9,9 +9,16 @@
 
 }
 
+#js-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
 
 body{
     background-color: var(--cor-bege);
+    z-index: -3;
     
 }
 
@@ -70,6 +77,8 @@ a {
 
 .logo{
     height: 60px;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
 }
 @media (max-width: 420px){
     .logo{height: 40px;}
@@ -107,6 +116,14 @@ a {
     display: block;
 }
 
+.sigma{
+    opacity: 0;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s;
+
+}
 
 .carrosselContainer{
     width: 80%;
@@ -301,3 +318,5 @@ footer{
     padding: 20px 5%;
     text-align: center;
 }
+
+

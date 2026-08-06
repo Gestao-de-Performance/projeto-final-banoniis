@@ -14,15 +14,18 @@
 <body>
 
     <!--início cabeçalho-->
+    <video autoplay loop muted playsinline id="petala" src="img/eisque.mp4" style="display:none"></video>
+    <canvas id="js-background"></canvas>
 
-    <header>
+    <header class="header">
         <nav class="marginSite flexWrap displayFlex spaceBetween">
             <div class="displayFlex alignCenter">
                 <a href="#"><img class="logo" height="60px" src="img/haruo.webp" alt="Logo Galinha"></a> <!--usando logo inventado por enquanto-->
             </div>
             <div class="displayFlex imgCabecalho gap30">
                 <a href="https://www.instagram.com/"><img class="imgCabecalho icone" height="40px" src="img/instagram.webp" alt="logo instagram"></a>
-                <button id="botaoAgendar" class="botaoHeader">Agendar</button>
+                <button id="botaoAgendar" class="botao botaoHeader">Agendar</button>
+                <button id="botaotema" class="botao botaoHeader">tema</button>
             </div>
         </nav>
 
@@ -35,12 +38,15 @@
 
         <div class="carrosselContainer">
         <div class="carrosselSlide">
+
+            <video loop playsinline muted class="sigma" id="sigma" src="img/sigma.mp4" ></video>
+
             <img src="img/banner_um.webp">
             <img src="img/banner_dois.webp">
             <img src="img/banner_tres.webp">
         </div>
-        <button id="antBtn" class="carrosselBtn anterior"><</button>
-        <button id="proBtn" class="carrosselBtn proximo">></button>
+        <button id="antBtn" class="carrosselBtn botao anterior"><</button>
+        <button id="proBtn" class="carrosselBtn botao proximo">></button>
     </div>
 
 
